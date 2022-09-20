@@ -1,0 +1,15 @@
+site_name: Teledatics Documentation
+site_url: https://docs.teledatics.com
+nav:
+  - Home: index.md
+  - TD-XPAH:
+    - Introduction: 'introduction.md'
+    - 'Host Mode': 'host.md'
+    - 'Standalone Mode': 'standalone.md'
+    - 'Accessory Boards':
+      - 'Ethernet': 'ethernet.md'
+      - 'Wi-Fi GW': 'wifi.md'
+      - 'Air Quality Sensor': 'sensor.md'
+      - 'Camera Support': 'camera.md'
+  - 'About': 'about.md'
+theme: readthedocs
