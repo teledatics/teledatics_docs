@@ -27,6 +27,8 @@ The TD-XPAH can operate in one of two modes. These modes are known as <i>host</i
 
 The modes of operation are configure by on-board DIP switch settings. 
 
+![](images/All_DIP_settings.png)
+
 #### Host Mode
 
 When configured for <i>host</i> mode, the TD-XPAH works as a USB Wi-Fi dongle. The <i>host</i> mode device must be connected by a USB cable to an external Linux system.
