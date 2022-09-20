@@ -25,7 +25,7 @@ While other long-range wireless solutions exist, many of these are not compatibl
 
 The TD-XPAH can operate in one of two modes. These modes are known as <i>host</i> mode and <i>standalone</i> mode.
 
-The modes of operation are configure by on-board DIP switch settings. 
+The modes of operation are configured by on-board DIP switch settings. 
 
 ![](images/All_DIP_settings.png)
 
