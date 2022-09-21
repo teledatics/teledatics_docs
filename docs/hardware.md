@@ -4,7 +4,7 @@
 
 ![](images/nrc7292.png)
 
-The **TD-XPAH** is design around the [Newracom nrc7292](https://newracom.com/products/nrc7292) chip. This chip contains two embedded ARM Cortex-m series microcontrollers as well as peripheral connection buses and I/O pins. The nrc7292 contains a full implementation of the IEEE 802.11ah specifications and supports the various frequencies for 802.11ah in different world regions and countries.
+The **TD-XPAH** is design around the [Newracom nrc7292](https://newracom.com/products/nrc7292) chip. This chip contains two embedded ARM Cortex-m series micro-controllers as well as peripheral connection buses and I/O pins. The nrc7292 contains a full implementation of the IEEE 802.11ah specifications and supports the various frequencies for 802.11ah in different world regions and countries.
 
 The **TD-XPAH** is currently limited to the 902 - 928 MHz frequency band and supports 802.11ah in the United States, Canada, Australia, New Zealand, Japan and South Korea.
 
@@ -23,7 +23,7 @@ The [nrc7292](https://newracom.com/products/nrc7292) has the following features 
 - 32x GPIO pins
 - 3x watchdog timers
 
-The [nrc7292](https://newracom.com/products/nrc7292) multiplexes I/O. This means that certain pins are able to support multiple buses or I/O features. The behavior of these pins is determined at boot time by the <i>standlone</i> mode firmware.
+The [nrc7292](https://newracom.com/products/nrc7292) multiplexes I/O. This means that certain pins are able to support multiple buses or I/O features. The behavior of these pins is determined at boot time by the <i>standalone</i> mode firmware.
 
 ## FTDI FT4232 USB Chip
 
@@ -39,7 +39,7 @@ The nrc7292 SPI bus and three UART serial ports are connected from the nrc7292 t
 
 ![](images/TD-XPAH_ftdi_nrc7292_host_mode.png)<center>*host mode*</center>
 
-When the nrc7292 is set to <i>host</i> mode it loads on-board firmware over the SPI bus to enable communication with a Linux host system. The firmware uses the standard 4-pin SPI bus as well as an additional GPIO for handshaking. These pins are referred to as <i>host SPI</i> or HSPI in Newracom documention.
+When the nrc7292 is set to <i>host</i> mode it loads on-board firmware over the SPI bus to enable communication with a Linux host system. The firmware uses the standard 4-pin SPI bus as well as an additional GPIO for handshaking. These pins are referred to as <i>host SPI</i> or HSPI in Newracom documentation.
 
 - HMOSI
 - HMISO
@@ -62,7 +62,7 @@ UART0 and UART2 are free for other uses. The [Teledatics GUI](https://github.com
 	
 The [Teledatics GUI](https://github.com/teledatics/nrc7292_sdk/tree/teledatics_gui) uses UART0 to graph running threads and CPU loading. Both of these UART ports can be re-tasked for other purposes if desired.
 
-
+![](images/uart0_thread_stats.png)
 
 
 ## Daughterboard Pinout
@@ -76,6 +76,7 @@ Available pins:
 - +5V 
 - +3.3V
 - Ground
+- Reset
 - JTAG
 - Mode pins
 - I2C
