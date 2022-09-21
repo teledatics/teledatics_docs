@@ -4,7 +4,7 @@
 
 ![](images/nrc7292.png)
 
-The **TD-XPAH** is design around the [Newracom nrc7292](https://newracom.com/products/nrc7292) chip. This chip contains two embedded ARM Cortex-m series micro-controllers as well as peripheral connection buses and I/O pins. The nrc7292 contains a full implementation of the IEEE 802.11ah specifications and supports the various frequencies for 802.11ah in different world regions and countries.
+The **TD-XPAH** is designed around the [Newracom nrc7292](https://newracom.com/products/nrc7292) chip. This chip contains two embedded ARM Cortex-m series micro-controllers as well as peripheral connection buses and I/O pins. The nrc7292 contains a full implementation of the IEEE 802.11ah specifications and supports the various frequencies for 802.11ah in different world regions and countries.
 
 The **TD-XPAH** is currently limited to the 902 - 928 MHz frequency band and supports 802.11ah in the United States, Canada, Australia, New Zealand, Japan and South Korea.
 
@@ -54,9 +54,9 @@ When the nrc7292 is set to <i>standalone</i> mode it boots an on-board operating
 
 The Newracom <i>standalone</i> mode SDK is based on the [Espressif ESP SDK](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/), which itself builds upon [FreeRTOS](https://www.freertos.org/). Much of the Newracom SDK is open source, though major functionality is contained in a closed source binary only library. The closed source binary includes all Wi-Fi functionality as well as direct access to the hardware buses & I/O.
 
-The **TD-XPAH** hardware connects three UART serial ports to the FTDI USB chip that can be used during <i>standlone</i> mode development and testing. These are the nrc7292 UART0, UART2, and UART3. UART3 is used as the default SDK debug console and has a simple command line interface. UART3 is also used for firmware download via the Newracom Firmware Flash tool.
+The **TD-XPAH** hardware connects three UART serial ports to the FTDI USB chip that can be used during <i>standalone</i> mode development and testing. These are the nrc7292 UART0, UART2, and UART3. UART3 is used as the default SDK debug console and has a simple command line interface. UART3 is also used for firmware download via the Newracom Firmware Flash tool.
 
-UART0 and UART2 are free for other uses. The [Teledatics GUI](https://github.com/teledatics/nrc7292_sdk/tree/teledatics_gui) implements a PPP connection over UART2 that can be used to commnunicate via TCP/IP over the USB cable.
+UART0 and UART2 are free for other uses. The [Teledatics GUI](https://github.com/teledatics/nrc7292_sdk/tree/teledatics_gui) implements a PPP connection over UART2 that can be used to communicate via TCP/IP over the USB cable.
 
 	pppd -detach noauth local nocrtscts modem /dev/ttyUSB2 192.168.200.3:192.168.200.4 115200
 	

@@ -4,7 +4,7 @@
 
 ![](images/TD-XPAH-SENS-HAT.png)
 
-The **TD-XPAH-ETH-HAT** was developed from the Teledatics Kicad daughterboard 'hAT' [template](https://github.com/teledatics/TD-XPAH_hAT_template). The Kicad template can be installed in Kicad 6.x or newer versions.
+The **TD-XPAH-SENS-HAT** was developed from the Teledatics Kicad daughterboard 'hAT' [template](https://github.com/teledatics/TD-XPAH_hAT_template). The Kicad template can be installed in Kicad 6.x or newer versions.
 
 
 The Teledatics GUI <i>standalone</i> mode firmware automatically recognizes and initializes the Air Quality Sensor hAT on boot.
