@@ -8,17 +8,19 @@ Teledatics has created a repository that currently supports the Debian and Raspb
 
 Run the following commands to add our GPG key and repository to your system
 
-	wget -O - https://teledatics.com/teledatics.gpg.key | apt-key add -
-	echo "deb https://teledatics.com/repos/apt/debian bullseye misc" > /etc/apt/sources.list.d/teledatics-repo.list
-	apt update
+	sudo wget https://teledatics.com/teledatics.gpg.key -O - | sudo apt-key add -
+	sudo echo "deb https://teledatics.com/repos/apt/debian bullseye misc" | sudo tee /etc/apt/sources.list.d/teledatics-repo.list
+	sudo apt update
 	
 ### Installing Drivers
 
 To install the drivers run the following commands
 
-	apt install spi-ft232h-dkms nrc-dkms
+	sudo apt install spi-ft232h-dkms nrc-dkms
 
-This will install and compile the drivers automatically for your system. The drivers will be installed to directory
+This will install and compile the drivers automatically for your system. This may take some time on smaller systems.
+
+The drivers will be installed to directory
 
 	/lib/modules/<kernel-version>/updates/dkms
 
@@ -28,7 +30,7 @@ The nrc7292 driver is currently loaded manually. We have included helper scripts
 
 To load the nrc7292 driver run the command
 
-	modprobe nrc
+	sudo modprobe nrc
 		
 The spi-ft232h driver loads automatically whenever your TD-XPAH is connected to the system. You do not need to load the spi-ft232h driver manually.
 
@@ -36,7 +38,7 @@ The spi-ft232h driver loads automatically whenever your TD-XPAH is connected to 
 
 To unload the nrc7292 driver run the command:
 
-	rmmod nrc
+	sudo rmmod nrc
 	
 Make sure you unload the driver manually *before* you unplug the TD-XPAH from your Linux system.	
 
