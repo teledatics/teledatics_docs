@@ -9,7 +9,7 @@ The **TD-XPAH-SENS-HAT** was developed from the Teledatics Kicad daughterboard '
 
 The Teledatics GUI <i>standalone</i> mode firmware automatically recognizes and initializes the Air Quality Sensor hAT on boot.
 
-The **TD-XPAH-SENS-HAT** uses the SGP30 temperature & humidity sensor chip and the SGP30 CO2 & VoC (volatile organic compounds) sensor chip. All required software and drivers are included in the open source Teledatics [GUI firmware](https://github.com/teledatics/nrc7292_sdk/tree/teledatics_gui) source code tree on our github repository.
+The **TD-XPAH-SENS-HAT** uses the SHT30 temperature & humidity sensor chip and the SGP30 CO2 & VoC (volatile organic compounds) sensor chip. All required software and drivers are included in the open source Teledatics [GUI firmware](https://github.com/teledatics/nrc7292_sdk/tree/teledatics_gui) source code tree on our github repository.
 
 The Teledatics GUI will display temperature, humidity, CO2 PPM, and VoC PPM updated every 5 seconds via a web socket.
 

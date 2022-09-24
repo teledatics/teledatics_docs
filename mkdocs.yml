@@ -5,6 +5,8 @@ nav:
   - TD-XPAH:
     - 'Introduction': 'introduction.md'
     - 'Host Mode': 'host.md'
+    - 'Linux Drivers':
+        - 'Installing Drivers': 'drivers.md'
     - 'Standalone Mode': 'standalone.md'
     - 'Accessory Boards':
       - 'Ethernet': 'ethernet.md'

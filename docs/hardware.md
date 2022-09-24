@@ -35,7 +35,7 @@ The **TD-XPAH** is designed to run completely over a USB-C connection. This is a
 
 ![](images/TD-XPAH_ftdi_nrc7292.png)<center>*hardware port mapping*</center>
 
-The TD-XPAH connects the nrc7292 SPI interface and three UART serial ports to the USB bus through ft4232h chip.
+The TD-XPAH connects the nrc7292 SPI interface and three UART serial ports to the USB bus through the ft4232h chip.
 
 ![](images/TD-XPAH_ftdi_nrc7292_host_mode.png)<center>*host mode*</center>
 
