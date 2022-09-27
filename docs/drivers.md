@@ -25,21 +25,17 @@ The drivers will be installed to directory
 	/lib/modules/<kernel-version>/updates/dkms
 
 ### Loading Drivers
-
-The nrc7292 driver is currently loaded manually. We have included helper scripts that will automatically set the correct parameters when the driver loads. 
-
-To load the nrc7292 driver run the command
-
-	sudo modprobe nrc
 		
-The spi-ft232h driver loads automatically whenever your TD-XPAH is connected to the system. You do not need to load the spi-ft232h driver manually.
+The spi-ft232h and nrc drivers load automatically whenever your TD-XPAH is connected to the system. You do not need to load the spi-ft232h or nrc drivers manually.
 
 ### Unloading Drivers
 
-To unload the nrc7292 driver run the command:
+To unload the drivers run the command:
 
-	sudo rmmod nrc
+	sudo modprobe -r spi-ft232h
 	
-Make sure you unload the driver manually *before* you unplug the TD-XPAH from your Linux system.	
+This will unload both the spi-ft232h and the nrc driver.
+
+Make sure you unload the driver *before* you unplug the TD-XPAH from your Linux system.	
 
 
